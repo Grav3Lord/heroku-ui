@@ -10,8 +10,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 // page_url = https://the-internet.herokuapp.com/challenging_dom
 public class ChallengingDomPage {
-    @As("Page header")
-    private SelenideElement pageHeader = $("#content h3");
     @As("Table rows")
     private ElementsCollection tableRows = $$("div[class$='large-centered'] tr");
     @As("Edit buttons")
@@ -21,12 +19,6 @@ public class ChallengingDomPage {
     @As("Canvas")
     private SelenideElement canvas = $("#canvas");
 
-    public SelenideElement pTheHardestPartAutomated = $("p");
-
-    @Step("Verify, is page header is visible")
-    public boolean isPageHeaderVisible() {
-        return pageHeader.shouldBe(visible).isDisplayed();
-    }
 
     @Step("Getting row count")
     public int getRowCount() {
