@@ -1,4 +1,4 @@
-package ru.example.herokuappui.contextmenu;
+package ru.example.herokuappui.contextmenu.page;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

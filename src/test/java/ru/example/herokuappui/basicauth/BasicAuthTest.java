@@ -3,6 +3,7 @@ package ru.example.herokuappui.basicauth;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import ru.example.herokuappui.basicauth.page.BasicAuthPage;
 import utils.BaseDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;

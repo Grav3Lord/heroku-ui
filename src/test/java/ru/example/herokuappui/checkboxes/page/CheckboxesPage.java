@@ -1,7 +1,6 @@
-package ru.example.herokuappui.checkboxes;
+package ru.example.herokuappui.checkboxes.page;
 
 import com.codeborne.selenide.As;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Step;
 

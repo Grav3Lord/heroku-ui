@@ -1,11 +1,9 @@
-package ru.example.herokuappui.basicauth;
+package ru.example.herokuappui.basicauth.page;
 
 import com.codeborne.selenide.As;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.executeJavaScript;

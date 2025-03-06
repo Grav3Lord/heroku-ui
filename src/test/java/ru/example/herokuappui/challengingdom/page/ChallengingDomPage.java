@@ -1,4 +1,4 @@
-package ru.example.herokuappui.challengingdom;
+package ru.example.herokuappui.challengingdom.page;
 
 import com.codeborne.selenide.As;
 import com.codeborne.selenide.ElementsCollection;

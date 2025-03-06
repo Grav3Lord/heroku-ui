@@ -1,4 +1,4 @@
-package ru.example.herokuappui.draganddrop;
+package ru.example.herokuappui.draganddrop.page;
 
 import com.codeborne.selenide.SelenideElement;
 

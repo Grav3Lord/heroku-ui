@@ -1,4 +1,4 @@
-package ru.example.herokuappui.dropdown;
+package ru.example.herokuappui.dropdown.page;
 
 import com.codeborne.selenide.As;
 import com.codeborne.selenide.SelenideElement;

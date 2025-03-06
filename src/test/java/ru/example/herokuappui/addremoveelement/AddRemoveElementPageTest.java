@@ -3,6 +3,7 @@ package ru.example.herokuappui.addremoveelement;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import ru.example.herokuappui.addremoveelement.page.AddRemoveElementPage;
 import utils.BaseDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.example.herokuappui.common.CommonElementsPage;
+import ru.example.herokuappui.dissapearingelement.page.DisappearingElementsPage;
 import utils.BaseDriver;
 
 import static io.qameta.allure.Allure.step;

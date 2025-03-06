@@ -1,4 +1,4 @@
-package ru.example.herokuappui.dynamiccontent;
+package ru.example.herokuappui.dynamiccontent.page;
 
 import com.codeborne.selenide.As;
 import com.codeborne.selenide.ElementsCollection;

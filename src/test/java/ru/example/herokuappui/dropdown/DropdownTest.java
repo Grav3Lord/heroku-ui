@@ -3,6 +3,7 @@ package ru.example.herokuappui.dropdown;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import ru.example.herokuappui.dropdown.page.DropdownPage;
 import utils.BaseDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

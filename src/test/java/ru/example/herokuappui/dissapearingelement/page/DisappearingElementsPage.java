@@ -1,4 +1,4 @@
-package ru.example.herokuappui.dissapearingelement;
+package ru.example.herokuappui.dissapearingelement.page;
 
 import com.codeborne.selenide.As;
 import com.codeborne.selenide.ElementsCollection;

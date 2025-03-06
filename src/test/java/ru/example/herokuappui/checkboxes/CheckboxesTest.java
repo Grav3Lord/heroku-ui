@@ -1,10 +1,10 @@
 package ru.example.herokuappui.checkboxes;
 
-import io.qameta.allure.Story;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import ru.example.herokuappui.checkboxes.page.CheckboxesPage;
 import utils.BaseDriver;
 
 import static org.junit.jupiter.api.Assertions.*;

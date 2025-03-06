@@ -1,4 +1,4 @@
-package ru.example.herokuappui.addremoveelement;
+package ru.example.herokuappui.addremoveelement.page;
 
 import com.codeborne.selenide.*;
 import io.qameta.allure.Step;

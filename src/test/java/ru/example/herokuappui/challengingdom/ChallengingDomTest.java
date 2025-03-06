@@ -4,6 +4,7 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import ru.example.herokuappui.challengingdom.page.ChallengingDomPage;
 import ru.example.herokuappui.common.CommonElementsPage;
 import utils.BaseDriver;
 
