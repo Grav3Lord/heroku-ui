@@ -7,8 +7,6 @@ import ru.example.herokuappui.basicauth.page.BasicAuthPage;
 import ru.example.herokuappui.basicauth.util.Credentials;
 import utils.BaseDriver;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class BasicAuthTest {
     private static BasicAuthPage basicAuthPage;
     private static Credentials credentials;

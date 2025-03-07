@@ -13,9 +13,6 @@ import static com.codeborne.selenide.Selenide.$$;
 public class LargePage {
     private static final Logger logger = LoggerFactory.getLogger(LargePage.class);
 
-    @As("Large table")
-    private SelenideElement largeTable = $("#large-table");
-
     @As("Table rows")
     private ElementsCollection tableRows = $$("#large-table tbody tr");
 

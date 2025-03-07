@@ -1,7 +1,6 @@
 package ru.example.herokuappui.securedownload.page;
 
 import com.codeborne.selenide.As;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

@@ -40,7 +40,7 @@ public class DownloadSecureTest {
     public static void cleanup() {
         File downloadDir = new File(downloadsFolder);
         for (File file : downloadDir.listFiles()) {
-            file.delete();
+            file.deleteOnExit();
         }
         BaseDriver.tearDown();
     }
