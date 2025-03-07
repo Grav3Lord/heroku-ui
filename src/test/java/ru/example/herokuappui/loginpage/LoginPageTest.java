@@ -12,11 +12,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginPageTest {
     private static LoginPage loginPage;
+    private static Credentials credentials;
 
     @BeforeAll
     public static void init() {
         BaseDriver.setup();
         loginPage = new LoginPage();
+        credentials = new Credentials();
     }
 
     @Test
@@ -24,8 +26,8 @@ public class LoginPageTest {
         BaseDriver.openPage("/login");
         assertTrue(loginPage.isPageHeaderVisible(), "Page header should be visible");
 
-        loginPage.enterUsername(Credentials.getUsername());
-        loginPage.enterPassword(Credentials.getPassword());
+        loginPage.enterUsername(credentials.getUsername());
+        loginPage.enterPassword(credentials.getPassword());
         loginPage.clickLoginButton();
         assertTrue(loginPage.isLoginSuccessful(), "Login should be successful");
         String successMessage = loginPage.getSuccessMessageText();
@@ -38,7 +40,7 @@ public class LoginPageTest {
         assertTrue(loginPage.isPageHeaderVisible(), "Page header should be visible");
 
         loginPage.enterUsername("invaliduser");
-        loginPage.enterPassword(Credentials.getPassword());
+        loginPage.enterPassword(credentials.getPassword());
         loginPage.clickLoginButton();
         assertTrue(loginPage.isLoginFailed(), "Login should fail with invalid username");
         String errorMessage = loginPage.getErrorMessageText();
@@ -50,7 +52,7 @@ public class LoginPageTest {
         BaseDriver.openPage("/login");
         assertTrue(loginPage.isPageHeaderVisible(), "Page header should be visible");
 
-        loginPage.enterUsername(Credentials.getUsername());
+        loginPage.enterUsername(credentials.getUsername());
         loginPage.enterPassword("wrongpassword");
         loginPage.clickLoginButton();
         assertTrue(loginPage.isLoginFailed(), "Login should fail with invalid password");

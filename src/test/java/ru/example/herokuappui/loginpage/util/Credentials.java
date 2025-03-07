@@ -1,24 +1,15 @@
 package ru.example.herokuappui.loginpage.util;
 
-import java.io.IOException;
-import java.util.Properties;
+import utils.BaseCredentials;
 
-public class Credentials {
-    private static final Properties properties = new Properties();
-
-    static {
-        try {
-            properties.load(Credentials.class.getClassLoader().getResourceAsStream("config.properties"));
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to load credentials from config.properties", e);
-        }
+public class Credentials extends BaseCredentials {
+    @Override
+    public String getUsername() {
+        return properties.getProperty("username", "admin"); // Значение по умолчанию "admin"
     }
 
-    public static String getUsername() {
-        return properties.getProperty("username");
-    }
-
-    public static String getPassword() {
-        return properties.getProperty("password");
+    @Override
+    public String getPassword() {
+        return properties.getProperty("password", "admin"); // Значение по умолчанию "admin"
     }
 }

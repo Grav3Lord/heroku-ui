@@ -1,6 +1,7 @@
 package utils;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.FileDownloadMode;
 import org.slf4j.*;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
@@ -29,6 +30,8 @@ public class BaseDriver {
         Configuration.browserSize = browserSize;
         Configuration.timeout = timeout;
         Configuration.reportsFolder = "target/selenide-reports"; // Папка для логов/скриншотов
+        Configuration.downloadsFolder = "target/downloads";
+        Configuration.fileDownload = FileDownloadMode.CDP;
 
         // Логирование для отладки
         logger.info("Starting tests with browser: {}, baseUrl: {}, headless: {}", browser, baseUrl, headless);
