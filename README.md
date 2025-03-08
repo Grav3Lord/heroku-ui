@@ -14,7 +14,6 @@ This project provides UI tests for the [the-internet](https://the-internet.herok
 - Integration with Selenide for simplified Selenium interactions.
 - Allure reporting for test results.
 - Docker support for running tests in a containerized environment.
-- CI/CD emulation using GitHub Actions and Docker.
 
 ## Prerequisites
 - **Java 17** or higher
