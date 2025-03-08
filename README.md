@@ -1,6 +1,6 @@
 # Heroku UI Testing
 
-This project provides UI tests for the [the-internet](https://the-internet.herokuapp.com) application using Selenide, Selenium, and JUnit. It includes a comprehensive suite of tests covering various pages and functionalities, integrated with Docker for CI/CD emulation.
+This project provides UI tests for the [the-internet](https://the-internet.herokuapp.com) application using Selenide, Selenium, and JUnit. It includes a comprehensive suite of tests covering various pages and functionalities.
 
 ## Table of Contents
 - [Features](#features)
@@ -20,7 +20,6 @@ This project provides UI tests for the [the-internet](https://the-internet.herok
 - **Maven** for dependency management
 - **Docker** for containerized testing (optional)
 - **Chrome Browser** (or another browser supported by Selenium WebDriver)
-- GitHub account for CI/CD setup
 
 ## Installation
 1. Clone the repository:
